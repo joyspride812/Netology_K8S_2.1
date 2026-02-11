@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: local-pv
+spec:
+  capacity:
+    storage: 1Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage-sc
+  local:
+    path: /mnt/data
+  nodeAffinity:
+    required:                                  #«жесткое» правило: под обязан попасть на одну из перечисленных нод.
+      nodeSelectorTerms:                       # список условий (логическое «ИЛИ»). Достаточно выполнения одного из них.
+      - matchExpressions:                      #оператор выбора
+        - key: kubernetes.io/hostname          #стандартная метка ноды, содержащая её имя
+          operator: In                         #значение должно быть в списке.
+          values:                              #имена конкретных нод
+          - jump-host
