@@ -48,8 +48,10 @@
 - Создать Deployment приложения, состоящего из контейнеров busybox и multitool, использующего созданный ранее PVC.
 - Создать SC и PVC для подключения папки на локальной ноде, которая будет использована в поде. Так StorageClass в данном задании использует provisioner: kubernetes.io/no-provisioner динамически PV создаваться не будет и перед созданием SC необходимо создаьт PV.
 
- Создание SC, PVC и Deployments.
+ 
  <img width="591" height="42" alt="image" src="https://github.com/user-attachments/assets/9d918b41-a855-47e6-8ec9-66299b527669" />  
+
+ Создание SC, PVC и Deployments.
 <img width="579" height="67" alt="image" src="https://github.com/user-attachments/assets/d62acee8-29c0-48bd-b2b2-c775224c1c40" />
 
 - Продемонстрировать, что контейнер multitool может читать данные из файла в смонтированной директории, в который busybox записывает данные каждые 5 секунд.
