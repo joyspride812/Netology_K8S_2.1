@@ -56,11 +56,13 @@
 
 <img width="579" height="67" alt="image" src="https://github.com/user-attachments/assets/d62acee8-29c0-48bd-b2b2-c775224c1c40" />  
   
-- Продемонстрировать, что контейнер multitool может читать данные из файла в смонтированной директории, в который busybox записывает данные каждые 5 секунд.  
+- Продемонстрировать, что контейнер multitool может читать данные из файла в смонтированной директории, в который busybox записывает данные каждый час.  
 
    
- <img width="817" height="210" alt="image" src="https://github.com/user-attachments/assets/4ae10823-b969-4d8f-8872-8d651e18a3f8" />
-### Манифесты:
+ <img width="817" height="210" alt="image" src="https://github.com/user-attachments/assets/4ae10823-b969-4d8f-8872-8d651e18a3f8" />  
+
+ 
+### Манифесты:  
 - [sc.yaml](https://github.com/joyspride812/Netology_K8S_2.1/blob/main/sc.yaml)
 - [pv.yaml](https://github.com/joyspride812/Netology_K8S_2.1/blob/main/pv.yaml)
  
